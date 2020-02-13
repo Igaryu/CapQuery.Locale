@@ -2,7 +2,7 @@
 import  sys, os, getpass
 
 try:
-        import sqlite3 
+    import sqlite3 
 except ImportError:
     print("")
     print("")
@@ -177,7 +177,6 @@ intesta()
 
 try:
 	db = sqlite3.connect(database="cap.db")
-
 except:
     print("")
     print("")
@@ -191,6 +190,7 @@ except:
 
 c=db.cursor()
 risp=0
+
 while(risp != 4):
     risp=menu()
     if (risp==1):
